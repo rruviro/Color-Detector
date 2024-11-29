@@ -7,7 +7,7 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("fetch.php")
+    @GET("/fetch.php")
     fun getProductDetails(
         @Query("hex") hex: String
     ): Call<Product>
